@@ -1,0 +1,128 @@
+.shoppingCart {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 10;
+}
+
+.header h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.shoppingCart hr {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.header a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.header a:hover {
+  color: #f1f1f1;
+}
+
+.header .closeCartBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: rgb(112, 112, 112);
+  background-color: transparent;
+  border: none;
+}
+
+.header .closeCartBtn:hover {
+  color: rgb(0, 0, 0);
+}
+
+.cartContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 30rem;
+  overflow: auto;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.cartTotal {
+  margin: 1.0625rem 0 1.25rem;
+  padding: 1.0625rem 0rem;
+  border-width: 1px 0;
+  border-color: rgb(179, 179, 179);
+  border-style: solid;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.cartTotal .totalPrice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  font-size: 16px;
+  color: black;
+}
+
+.totalPrice .totalPriceAmount {
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.cartButtonControl {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.cartButtonControl .cartButton {
+  flex: 1;
+  margin: 5px;
+  padding: 0.875rem 0;
+  color: rgb(73, 223, 68);
+  background-color: white;
+  border: 1px solid rgb(73, 223, 68);
+}
+
+.cartButtonControl .cartButton:hover {
+  color: black;
+  background-color: rgb(73, 223, 68);
+  border: 1px solid black;
+}
+
+.cartButtonControl i {
+  margin-left: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .shoppingCart {
+    padding-top: 15px;
+  }
+  .shoppingCart a {
+    font-size: 18px;
+  }
+}

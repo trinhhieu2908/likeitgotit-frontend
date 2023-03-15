@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend-dev
+    image: chuongdocker/frontend-dev-test:v1
+    build: 
+      context: ./frontend
+      dockerfile: dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/usr/src/app/frontend
+      - /usr/src/app/frontend/node_modules
+  backend:
+    container_name: backend-dev
+    image: chuongdocker/backend-dev-test:v1
+    environment:
+      - PORT=3006
+    build: 
+      context: ./backend
+      dockerfile: dockerfile.dev
+    ports:
+      - 3006:3006
+    volumes:
+      - ./backend:/usr/src/app/backend
+      - /usr/src/app/backend/node_modules
+    

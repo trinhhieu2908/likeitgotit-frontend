@@ -1,0 +1,37 @@
+.navbar-logo {
+  padding: 15px;
+  color: rgb(252, 173, 173);
+  pointer-events: none;
+  font-family: Cursive;
+  margin-left: 1.5%;
+  animation-name: changeTextColor;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeTextColor {
+  0% {
+    color:rgb(252, 173, 173);
+  }
+  25% {
+    color:rgb(252, 251, 173);
+  }
+  50% {
+    color:rgb(186, 252, 173);
+  }
+  75% {
+    color:rgb(178, 173, 252);
+  }
+  100% {
+    color:rgb(252, 173, 173);
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-logo {
+    padding: initial;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 15%;
+  }
+}

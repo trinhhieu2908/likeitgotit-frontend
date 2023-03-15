@@ -1,0 +1,252 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  padding: 3%;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-bottom: 1rem;
+}
+.content .content-header {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.content .content-header h2 {
+  color: #333333;
+  font-size: 22px;
+}
+
+.content .input-content {
+  zoom: 1;
+  margin-bottom: 2rem;
+  margin: -0.45em;
+}
+
+.content .input-content:last-child {
+  margin-bottom: inherit;
+}
+
+.field {
+  width: 100%;
+  float: left;
+  padding: 0.45em;
+  box-sizing: border-box;
+}
+
+.field .field-input-wrapper {
+  position: relative;
+}
+
+.field .field-input-wrapper .field-label {
+  font-size: 0.85714em;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 0.93333em;
+  z-index: 1;
+  user-select: none;
+  transform: translateY(3px);
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  opacity: 0;
+  color: #999999;
+  transition: all 0.2s ease-out;
+  margin: 0.5em 0;
+  margin-top: 0.3em;
+  display: block;
+}
+
+.field .field-input-wrapper .field-input {
+  box-shadow: 0 0 0 1px #d9d9d9;
+  transition: all 0.2s ease-out;
+  background-color: white;
+  color: #333333;
+  border-radius: 4px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.94em 2.8em 0.94em 0.8em;
+  word-break: normal;
+  font-size: 14px;
+  border: 1px solid rgb(177, 176, 176);
+}
+.field .field-input-wrapper .field-input-invalid {
+  border: 1px solid red;
+}
+
+.notice-input-invalid {
+  margin: 0;
+  color: red;
+}
+
+.option-shipping h2 {
+  color: #333333;
+  font-size: 22px;
+  margin-top: 200px;
+}
+
+.content .content-box {
+  box-shadow: 0 0 0 1px #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+  color: #737373;
+  margin-top: 1em;
+}
+
+.content .content-box .content-box-row {
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  zoom: 1;
+}
+
+.content .content-box .content-box-row:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: none;
+}
+
+.content .content-box .content-box-row:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.radio-wrapper {
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+  zoom: 1;
+}
+
+.radio-wrapper .radio-label {
+  display: flex !important;
+  cursor: pointer !important;
+  align-items: center;
+  padding: 0px;
+  width: auto;
+}
+
+.radio-wrapper .radio-input {
+  display: flex;
+  padding-right: 0.75em;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+.radio-wrapper .radio-input .input-radio {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 0 0 #338dbc inset;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  vertical-align: 0px;
+  outline: 0;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.radio-wrapper .radio-input .input-radio:checked {
+  border: none;
+}
+
+.radio-wrapper .radio-input img {
+  margin-left: 10px;
+  margin-top: -10px;
+  display: flex;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+}
+
+.radio-wrapper .radio-label .radio-label-primary {
+  display: table-cell;
+  cursor: pointer !important;
+  align-items: center;
+  width: auto;
+  margin-top: -3px;
+  margin-left: 8px;
+}
+
+.radio-wrapper .radio-accessory {
+  margin-left: auto;
+  white-space: nowrap;
+  margin-top: 6px;
+}
+
+.option-payment-method h2 {
+  color: #333333;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.orderButtonControl {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.orderButtonControl .orderButton {
+  flex: 1;
+  margin: 5px;
+  padding: 0.875rem 0;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.orderButtonControl .orderButton:hover {
+  color: rgb(15, 168, 9);
+  background-color: transparent;
+  border: 1px solid rgb(15, 168, 9);
+}
+
+.btnDisable {
+  color: #616161 !important;
+  border: 1px solid #616161 !important;
+}
+
+.btnDisable:hover {
+  text-decoration: none;
+  background-color: #ffffff !important;
+  color: #fff;
+  cursor: not-allowed !important;
+}
+
+@media (min-width: 750px) {
+  .main .content {
+    padding-bottom: 2rem !important;
+  }
+  .content .content-header {
+    margin-bottom: 1.5rem;
+  }
+  .field-two-third {
+    width: 66.66667% !important;
+  }
+  .field-one-third {
+    width: 33.33333% !important;
+  }
+}
+
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.pd-4 {
+  padding: 4px !important;
+}

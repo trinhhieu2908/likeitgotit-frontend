@@ -1,0 +1,155 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #7a7a7a;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.cart-item h2 {
+  margin: 0 0 0.5rem 0;
+  color: #363636;
+  font-size: 18px;
+}
+
+.cart-item h3 {
+  margin: 0 0 0.5rem 0.2rem;
+  color: #5f5f5f;
+  font-size: 14px;
+}
+
+.header {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.summary {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  color: #db253d;
+  font-size: 14px;
+}
+
+.amount {
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 1px 3px;
+  border-radius: 6px;
+  color: #363636;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-item button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #bd0f26;
+  border: 1px solid #d42139;
+  width: 30px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.3rem;
+}
+
+.cart-item button:hover,
+.cart-item button:active {
+  background-color: #b90820;
+  color: white;
+}
+
+.cart-item-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cart-item-info img {
+  height: 100px;
+  width: 90px;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-item-info img {
+    height: 95px;
+    width: 86px;
+  }
+  .summary {
+    width: 200px;
+  }
+  .amount {
+    font-size: 14px;
+  }
+  .cart-item button {
+    font-size: 14px;
+    width: 25px;
+  }
+  .cart-item h2 {
+    font-size: 16px;
+  }
+  .header {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .cart-item-info img {
+    height: 80px;
+    width: 76px;
+  }
+  .summary {
+    width: 150px;
+  }
+  .amount {
+    font-size: 12px;
+  }
+  .cart-item button {
+    font-size: 12px;
+    width: 22px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .cart-item-info img {
+    height: 90px;
+    width: 75px;
+  }
+  .summary {
+    width: 120px;
+  }
+  .amount {
+    font-size: 10px;
+  }
+  .cart-item button {
+    font-size: 10px;
+    width: 20px;
+  }
+  .cart-item h2 {
+    font-size: 12px;
+  }
+  .cart-item h3 {
+    font-size: 10px;
+  }
+  .header {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+}

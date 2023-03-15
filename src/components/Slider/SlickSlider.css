@@ -1,0 +1,53 @@
+.carousel .slick-dots {
+  bottom: -2.5vw;
+}
+
+.carousel .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(94, 93, 93);
+  border-radius: 20px;
+}
+
+.carousel .slick-dots li button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+  text-align: center;
+  opacity: 0.5;
+  color: #000;
+  background-color: rgb(94, 93, 93);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel .slick-dots .slick-active button {
+  border-color: tomato;
+}
+
+.carousel .slick-dots .slick-active button:before {
+  background-color: tomato;
+  opacity: 1;
+}
+
+@media screen and (max-width:992px){
+  .carousel .slick-dots {
+    bottom: -3.5vw;
+  }
+}
+
+@media screen and (max-width:678px){
+  .carousel .slick-dots {
+    bottom: -4.5vw;
+  }
+}
+
+@media screen and (max-width:550px){
+  .carousel .slick-dots {
+    bottom: -7.5vw;
+  }
+}

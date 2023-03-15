@@ -1,0 +1,18 @@
+.center {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 14%;
+}
+
+.center p {
+  padding: 15px;
+  color: rgb(241, 68, 62);
+  pointer-events: none;
+  font-family: Cursive;
+  font-size: 40px;
+}

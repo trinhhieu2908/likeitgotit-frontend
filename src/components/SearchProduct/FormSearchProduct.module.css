@@ -1,0 +1,51 @@
+.form {
+  height: 8rem;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.control input {
+  font: inherit;
+  font-size: 20px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.control input:focus {
+  outline: none;
+}
+
+.line {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media (max-width: 992px) {
+  .form {
+    height: 7rem;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .control input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+    .form {
+        height: 6rem;
+      }
+      .title {
+        font-size: 18px;
+      }
+      .control input {
+        font-size: 14px;
+      }
+  }

@@ -1,0 +1,47 @@
+.content {
+  margin-top: 20px;
+  text-align: center;
+}
+.image {
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .header {
+  width: 60%;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+.about .header a {
+  font-size: 30px;
+}
+
+.about .body {
+  width: 70%;
+  text-align: justify;
+  margin-left: 15%;
+  margin-top: 20px;
+  padding-bottom: 150px;
+}
+
+.about .body h5 {
+  font-weight: 600;
+  color: rgb(78, 78, 78);
+}
+
+@media screen and (max-width:550px) {
+  .about .header a {
+    font-size: 25px;
+    width: initial !important
+  }
+}

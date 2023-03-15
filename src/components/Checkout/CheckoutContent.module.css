@@ -1,0 +1,50 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  animation: ease-appear 1s ease-out forwards;
+}
+
+.handle {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 14%;
+}
+
+.text {
+  padding: 15px;
+  color: rgb(247, 170, 215);
+  pointer-events: none;
+  font-family: Cursive;
+  font-size: 40px;
+}
+
+.textShop {
+  padding: 15px;
+  color: rgb(161, 247, 139);
+  font-family: Cursive;
+  font-size: 30px;
+}
+
+.textShop:hover {
+  text-decoration: none;
+  color: rgb(83, 177, 59);
+}
+
+@media (min-width: 1000px) {
+  .checkout {
+    flex-direction: row-reverse;
+  }
+}
+
+@keyframes ease-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

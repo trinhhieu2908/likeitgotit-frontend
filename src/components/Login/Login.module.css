@@ -1,0 +1,29 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: -300px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* .dropdown:hover .dropdown-content {display: flex;} */
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 376px) {
+  .dropdown-content {    
+    margin-left: -270px;    
+  }
+}

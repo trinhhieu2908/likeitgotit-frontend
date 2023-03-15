@@ -1,0 +1,16 @@
+.area {
+  padding-bottom: 60px;
+  padding-top: 100px;
+  animation: ease-appear 2s ease-out forwards;
+}
+
+
+@keyframes ease-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

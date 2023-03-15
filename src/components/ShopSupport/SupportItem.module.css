@@ -1,0 +1,50 @@
+.supportItem {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.supportItem .itemIcon {
+  flex: 0 0 50px;
+  margin-right: 20px;
+}
+
+.supportItem .itemIcon img {
+  width: 100%;
+}
+
+.supportItem .itemContent h5 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.supportItem .itemContent p {
+  margin: 0;
+  color: #666;
+}
+
+.itemAnimated {
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+  }
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

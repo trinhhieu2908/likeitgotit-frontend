@@ -1,0 +1,87 @@
+.list {
+  position: relative;
+  background-color: #ebebeb;
+  border: 2px solid rgb(184, 184, 184);
+}
+
+.content h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.overflow {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 350px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px 25px;
+  font-size: 1em;
+}
+
+.total {
+  margin: 1.0625rem 0 1.25rem;
+  padding: 1.0625rem 0rem;
+  border-width: 0;
+  border-color: rgb(179, 179, 179);
+  border-style: solid;
+}
+
+.total .totalPrice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+
+.totalPrice .totalPriceAmount {
+  font-weight: 500;
+  margin-left: auto;
+  color: black;
+}
+
+.total .totalShipping {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  font-size: 16px;
+  color: #4b4b4b;
+  margin-top: 10px;
+}
+
+.totalShipping .shipping {
+  font-weight: 500;
+  margin-left: auto;
+  color: black;
+}
+
+@media (min-width: 1000px) {
+  .list {
+    width: 43%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-position: left top;
+    padding-top: 4em;
+    margin-top: -2em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .list {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+  .content {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.content {
+  padding-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.container-style {
+  width: 1188px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-detail {
+  margin-bottom: 1rem;
+}
+
+.scale-single {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    padding-bottom: 1rem;
+  }
+}
+
