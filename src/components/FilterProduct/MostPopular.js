@@ -38,7 +38,7 @@ const MostPopular = () => {
         <div className={styles.bannerList}>
           <h2>PRODUCTS</h2>
           <ul>
-            {listCategory.map((category) => (
+            {listCategory?.map((category) => (
               <li key={category.id}>
                 <Link
                   to={`/shop/products?category=${category.id}`}

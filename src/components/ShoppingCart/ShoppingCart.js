@@ -30,7 +30,7 @@ const ShoppingCart = () => {
 
   // console.log(itemCartData)
   let totalPrice = 0;
-  itemCart.map(item => {
+  itemCart?.map(item => {
     const existedCartItem = itemCartData.find(
       (itemData) => itemData.idProductOption === item.idProductOption
     );
@@ -53,7 +53,7 @@ const ShoppingCart = () => {
         <hr></hr>
         <div className={styles.cartContent}>
           <ul className={styles["cart-items"]}>
-            {itemCart.map((item) => (
+            {itemCart?.map((item) => (
               <CartItem
                 key={item.idProductOption}
                 id={item.idProductOption}

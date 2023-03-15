@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 
 import { listProductsActions } from "../../store/list-products";
+import { uiActions } from "../../store/ui-slice";
 
 import useHttp from "../../hook/use-http";
 
@@ -14,6 +15,7 @@ import Support from "../../components/ShopSupport/Support";
 import ListProduct from "../../components/Products/ListProduct";
 import ProductDetail from "../../components/ProductDetail/ProductDetail";
 import LoadingSpinner from "../../components/UI/LoadingSpinner";
+import { useLayoutEffect } from "react";
 
 const NotFound = React.lazy(() => import("../../pages/NotFound/NotFound"));
 
@@ -36,6 +38,10 @@ const Shop = () => {
     error: loadedProductHasError,
     sendRequest: fetchProductData,
   } = useHttp();
+
+  useLayoutEffect(() => {
+    dispatch(uiActions.changePage("shop-page"));
+  }, [dispatch]);
 
   const transformedProductData = useCallback(
     (productData) => {

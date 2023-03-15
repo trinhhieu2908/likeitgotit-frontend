@@ -61,7 +61,7 @@ const ProductDetailInformation = (props) => {
             onChange={selectSizeHandler}
           >
             <option value="">Select a size</option>
-            {props.optionSize.map((option) => (
+            {props.optionSize?.map((option) => (
               <option key={option.id} value={option.id}>
                 {option.size.name}
               </option>

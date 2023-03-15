@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useEffect } from "react";
 
 import { useDispatch } from "react-redux";
 import { searchProductActions } from "../../store/searchProduct";
@@ -11,14 +12,15 @@ import styles from "./FormSearchProduct.module.css";
 const FormSearchProduct = (props) => {
   const textSearchRef = useRef();
   const dispatch = useDispatch();
-  
+
   const submitSearchProductHandler = (event) => {
     event.preventDefault();
 
     dispatch(searchProductActions.close());
     dispatch(uiActions.changePage("shop-page"));
 
-    props.onSubmitSearchProduct(textSearchRef.current.value);    
+    props.onSubmitSearchProduct(textSearchRef.current.value);
+    textSearchRef.current.value = "";
   };
   return (
     <Card restyle={props.cardRestyle}>

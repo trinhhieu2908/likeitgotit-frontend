@@ -123,7 +123,7 @@ const ProductGallery = (props) => {
           className={styles["product-image-gallery"]}
           id="button-product-image-gallery"
         >
-          {props.images.map((image, index) => (
+          {props.images?.map((image, index) => (
             <button
               key={image.id}
               className={styles["product-gallery-item"]}

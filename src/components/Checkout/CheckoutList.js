@@ -11,7 +11,7 @@ const CheckoutList = () => {
 
   let totalPrice = 0;
 
-  const listCart = itemCart.map((item) => {
+  const listCart = itemCart?.map((item) => {
     const existedCartItem = itemCartData.find(
       (itemData) => itemData.idProductOption === item.idProductOption
     );

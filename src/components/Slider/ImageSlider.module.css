@@ -1,7 +1,7 @@
 .bodySlider {
   display: block;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   position: relative;
   background: rgb(255, 255, 255);
   overflow: hidden;
@@ -19,12 +19,12 @@
 
 @media screen and (max-width: 678px) {
   .bodySlider {
-    height: 65vh;
+    height: 50vh;
   }
 }
 
 @media screen and (max-width: 450px) {
   .bodySlider {
-    height: 52vh;
+    height: 40vh;
   }
 }

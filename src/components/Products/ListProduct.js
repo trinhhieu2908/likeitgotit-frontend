@@ -103,7 +103,7 @@ const ListProduct = (props) => {
       <div className={`container ${styles.containerStyle}`}>
         <div className={styles.products}>
           <div className="row">
-            {props.listProducts.map((product) => (
+            {props.listProducts?.map((product) => (
               <ProductItem
                 key={product.id}
                 id={product.id}
