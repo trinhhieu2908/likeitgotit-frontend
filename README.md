@@ -6,7 +6,7 @@
       "editor.background": "#292a24",
       "activityBar.background": "#292a24",
       "activityBarBadge.background": "#e95989",
-      "terminal.background": "#292a24",      
+      "terminal.background": "#292a24",
       "statusBar.background": "#292a24",
       "sideBar.background": "#292a24",
       "sideBarSectionHeader.background": "#292a24",
@@ -20,9 +20,31 @@
       "sideBar.border": "#f180a57a",
       "tab.border": "#f180a57a",
       "tab.activeBorder": "#f180a6ca",
-      "statusBar.debuggingBackground": "#292a24",      
+      "statusBar.debuggingBackground": "#292a24",
       "titleBar.activeBackground": "#292a24",
-      "editorGroupHeader.tabsBackground": "#292a24",
+      "editorGroupHeader.tabsBackground": "#292a24"
     }
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "support.class.component.js.jsx",
+        "settings": {
+          "foreground": "#8deabd",
+        }
+      },
+      {
+        "scope": "variable.other.object.js.jsx",
+        "settings": {
+          "fontStyle": "italic",
+        }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "fontStyle": "italic underline"
+        }
+      }
+    ]
   },
 ```
