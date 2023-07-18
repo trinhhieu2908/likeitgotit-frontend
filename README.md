@@ -1,7 +1,8 @@
 ## Config One Dark Pro
 
 ```json
-"[One Dark Pro]": {
+"workbench.colorCustomizations": {
+    "[One Dark Pro]": {
       "editor.background": "#292a24",
       "activityBar.background": "#292a24",
       "activityBarBadge.background": "#e95989",
@@ -23,4 +24,5 @@
       "titleBar.activeBackground": "#292a24",
       "editorGroupHeader.tabsBackground": "#292a24",
     }
+  },
 ```
