@@ -1,5 +1,6 @@
 ## Config One Dark Pro
 
+```json
 "[One Dark Pro]": {
       "editor.background": "#292a24",
       "activityBar.background": "#292a24",
@@ -22,3 +23,4 @@
       "titleBar.activeBackground": "#292a24",
       "editorGroupHeader.tabsBackground": "#292a24",
     }
+```
